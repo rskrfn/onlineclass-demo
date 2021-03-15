@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <!--Line Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/profile.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" />
+    <div class="container">
+      <div class="sidebar">
+        <div class="active">
+          <div class="notif hide">
+            <img src="/assets/icon_notifb.png" class="icon_notif" alt="" />
+          </div>
+          <div class="profilemini">
+            <a href="profile.html"
+              ><img
+                src="/assets/img_profile.png"
+                class="img_profile minalignprof"
+                alt=""
+            /></a>
+          </div>
+          <h4 class="name hide">Emir Kharisma</h4>
+          <p class="onlinestats hide">online</p>
+        </div>
+        <div class="sidebar-menu">
+          <ul>
+            <li>
+              <a href="dashboard-allschedule.html" class="inactive"
+                ><span class="btn_sidemenu minalign">
+                  <img
+                    src="/assets/icon_dashboardw.png"
+                    class="icon_sidemenu"
+                  /><span class="hide">Dashboard</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="activity.html" class="inactive"
+                ><span class="btn_sidemenu minalign"
+                  ><img
+                    src="/assets/icon_activity.png"
+                    class="icon_sidemenu"
+                  /><span class="hide">Activity</span></span
+                >
+              </a>
+            </li>
+            <li>
+              <a href="setting.html"
+                ><span class="btn_sidemenu minalign"
+                  ><img
+                    src="/assets/icon_setting.png"
+                    class="icon_sidemenu"
+                  /><span class="hide">Settings</span></span
+                >
+              </a>
+            </li>
+            <li>
+              <a href="help.html"
+                ><span class="btn_sidemenu minalign"
+                  ><img
+                    src="/assets/icon_help.png"
+                    class="icon_sidemenu"
+                  /><span class="hide">Help</span></span
+                >
+              </a>
+            </li>
+            <li>
+              <a href="index.html"
+                ><span class="btn_logout minalign"
+                  ><img
+                    src="/assets/icon_logout.png"
+                    class="icon_sidemenu"
+                  /><span class="hide">Logout</span></span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content">
+        <header>
+          <h3>
+            <label for="nav-toggle">
+              <span class="las la-bars"></span>
+            </label>
+            Sidebar
+          </h3>
+        </header>
+        <div class="profile">
+          <div class="layer"></div>
+          <div class="profile-header">
+            <img class="profile_img" src="assets/img_profilebig.png" />
+            <img class="changeimgbtn" src="assets/icon_edits.png" alt="" />
+            <h2>Emir Kharisma</h2>
+          </div>
+        </div>
+        <div class="profile-settings">
+          <h2>Profile Settings</h2>
+          <div class="setting-items first">
+            <div class="setting-item">
+              <img class="setting-icon" src="assets/icon_phone.png" alt="" />
+              <p>Phone Numbers</p>
+            </div>
+            <img class="icon_arrow" src="assets/icon_arrow.png" />
+          </div>
+          <div class="line"></div>
+          <div class="setting-items">
+            <div class="setting-item">
+              <img class="setting-icon" src="assets/icon_stars.png" alt="" />
+              <p>Change Password</p>
+            </div>
+            <img class="icon_arrow" src="assets/icon_arrow.png" />
+          </div>
+          <div class="line"></div>
+          <div class="setting-items">
+            <div class="setting-item">
+              <img class="setting-icon" src="assets/icon_chats.png" alt="" />
+              <p>Chat Settings</p>
+            </div>
+            <img class="icon_arrow" src="assets/icon_arrow.png" />
+          </div>
+          <div class="line"></div>
+          <div class="setting-items">
+            <div class="setting-item">
+              <img
+                class="setting-icon"
+                src="assets/icon_pushnotif.png"
+                alt=""
+              />
+              <p>Push Notifications</p>
+            </div>
+            <img class="icon_arrow" src="assets/icon_arrow.png" />
+          </div>
+          <div class="line"></div>
+          <div class="setting-items">
+            <div class="setting-item">
+              <img
+                class="setting-icon"
+                src="assets/icon_lock.png"
+                alt=""
+              />
+              <p>Privacy and Security</p>
+            </div>
+            <img class="icon_arrow" src="assets/icon_arrow.png" />
+          </div>
+          <div class="line"></div>
+          <div class="setting-items">
+            <div class="setting-item">
+              <img
+                class="setting-icon"
+                src="assets/icon_data.png"
+                alt=""
+              />
+              <p>Data and Storage</p>
+            </div>
+            <img class="icon_arrow" src="assets/icon_arrow.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
