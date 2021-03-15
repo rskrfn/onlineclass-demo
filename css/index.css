@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e6edf6;
+  font-family: kanit;
+}
+.container {
+  height: 85vh;
+  width: 100vw;
+  min-height: 500px;
+  min-width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  padding: 80px 40px 40px;
+}
+.form::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+}
+.form h2{
+    text-align: center;
+    margin-bottom: 5rem;
+    letter-spacing: 1px;
+}
+.form .inputusr{
+    position: relative;
+}
+.form .inputusr input{
+    position: relative;
+    width: 100%;
+    padding: 10px 10px;
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    border: 1px solid #ADA9BB;
+    outline: none;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: black;
+}
+.form .inputusr label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 0.7rem;
+    color: #ADA9BB;
+    pointer-events: none;
+    transition: .3s ease-out;
+    transform: translateY(-30px);
+}
+
+.form .inputpass{
+    position: relative;
+}
+.form .inputpass input{
+    width: 100%;
+    padding: 10px 10px;
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid #ADA9BB;
+    outline: none;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: black;
+}
+.form .inputpass label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 0.7rem;
+    color: #ADA9BB;
+    pointer-events: none;
+    transition: .3s ease-out;
+    transform: translateY(-30px);
+}
+.forgotpass{
+    display: block;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    text-align: right;
+    font-size: 12px;
+    font-family: roboto;
+    font-weight: 500;
+    position: relative;
+    color: black;
+    cursor: pointer;
+}
+.forgotpass:hover{
+    color: #5784BA;
+}
+.loginbtn{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background: #5784BA;
+    border: none;
+    border-radius: 10px;
+    font-family: kanit;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.googlebtn{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background:rgba(0, 13, 79, 0.08);;
+    background-image: url(/assets/icon_google.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 70px center;
+    border: none;
+    border-radius: 10px;
+    font-family: kanit;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.newuser{
+    position: absolute;
+    bottom: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-style: normal;
+    color:#ADA9BB;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.newuser .register{
+    color: #5784BA;
+}
