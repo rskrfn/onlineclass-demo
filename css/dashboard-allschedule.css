@@ -13,6 +13,25 @@ body {
   background-color: #e6edf6;
     text-decoration: none;
 }
+
+.floatbtn{
+  display: none;
+	position:fixed;
+	width:4rem;
+	height:4rem;
+	bottom:2rem;
+	right:2rem;
+	background-color:#5784ba;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.msg-icon{
+  padding: 1rem;
+}
+
 /*sidebar start*/
 .sidebar {
   position: fixed;
@@ -427,6 +446,20 @@ header .headermess {
   width: 100px;
   opacity: 0.3;
 }
+.science::before {
+  content: "";
+  position: absolute;
+  background-image: url(/assets/icon_science.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  height: 100px;
+  width: 100px;
+  opacity: 0.3;
+}
 .eventmenu {
   position: absolute;
   height: 5px;
@@ -585,6 +618,10 @@ header .headermess {
   }
   .main-content {
     width: calc(100% - 250px);
+  }
+  .floatbtn{
+    display: block;
+    transition: ease-in ;
   }
 }
 @media only screen and (max-width: 992px) {
