@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!--Line Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/dashboard-allschedule.css" rel="stylesheet" type="text/css" />
+    <title>Dashboard</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" />
+    <div class="sidebar">
+      <div class="notif hide">
+        <img src="/assets/icon_notif.png" class="icon_notif" alt="" />
+      </div>
+      <div class="profile">
+        <a href="profile.html"
+          ><img
+            src="/assets/img_profile.png"
+            class="img_profile minalignprof"
+            alt=""
+        /></a>
+      </div>
+      <h6 class="name hide">Emir Kharisma</h6>
+      <p class="onlinestats hide">online</p>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="dashboard-allschedule.html" class="active"
+              ><span class="btn_sidemenu minalign">
+                <img
+                  src="/assets/icon_dashboard.png"
+                  class="icon_sidemenu"
+                /><span class="hide">Dashboard</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="activity.html" class="inactive"
+              ><span class="btn_sidemenu minalign"
+                ><img
+                  src="/assets/icon_activity.png"
+                  class="icon_sidemenu"
+                /><span class="hide">Activity</span></span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="setting.html"
+              ><span class="btn_sidemenu minalign"
+                ><img
+                  src="/assets/icon_setting.png"
+                  class="icon_sidemenu"
+                /><span class="hide">Settings</span></span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="help.html"
+              ><span class="btn_sidemenu minalign"
+                ><img src="/assets/icon_help.png" class="icon_sidemenu" /><span
+                  class="hide"
+                  >Help</span
+                ></span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="index.html"
+              ><span class="btn_logout minalign"
+                ><img
+                  src="/assets/icon_logout.png"
+                  class="icon_sidemenu"
+                /><span class="hide">Logout</span></span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <header>
+        <h4>
+          <label for="nav-toggle">
+            <span class="las la-bars"></span>
+          </label>
+          Dashboard
+        </h4>
+      </header>
+      <div class="content">
+        <div class="main-center">
+          <div class="news">
+            <h4 class="newsheading">News</h4>
+            <div class="card-carousel">
+              <div class="slider">
+                <div class="slides">
+                  <input type="radio" name="radio-btn" id="radio1" />
+                  <input type="radio" name="radio-btn" id="radio2" />
+                  <input type="radio" name="radio-btn" id="radio3" />
+                  <input type="radio" name="radio-btn" id="radio4" />
+
+                  <div class="slide first">
+                    <img src="/assets/1.png" alt="" />
+                    <div class="info">
+                      <h3 class="slidetext">
+                        New update for front end development class sylabus!
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <img src="/assets/2.jpg" alt="" />
+                    <div class="info">
+                      <h3 class="slidetext">Headline 2!</h3>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <img src="/assets/3.jpg" alt="" />
+                    <div class="info">
+                      <h3 class="slidetext">Headline 3!</h3>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <img src="/assets/4.jpg" alt="" />
+                    <div class="info">
+                      <h3 class="slidetext">Headline 4!</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="text"></div>
+                <div class="navigation">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-calendar">
+            <div class="calendar-header">
+              <h5 class="today-date">Today, October 16</h5>
+              <div class="icon-calendar">
+                <img src="/assets/icon_calendar.png" alt="" class="iconcal" />
+              </div>
+            </div>
+            <div class="calendar-body">
+              <div class="date-cards">
+                <div class="card-single">
+                  <div>
+                    <span class="day">Mo</span>
+                    <span>12</span>
+                  </div>
+                </div>
+                <div class="card-single">
+                  <div>
+                    <span class="day">Tu</span>
+                    <span>13</span>
+                  </div>
+                </div>
+                <div class="card-single">
+                  <div>
+                    <span class="day">We</span>
+                    <span>14</span>
+                  </div>
+                </div>
+                <div class="card-single">
+                  <div>
+                    <span class="day">Th</span>
+                    <span>15</span>
+                  </div>
+                </div>
+                <div class="card-single-active">
+                  <div>
+                    <span class="day">Fr</span>
+                    <span>16</span>
+                  </div>
+                </div>
+                <div class="card-single">
+                  <div>
+                    <span class="day">Sa</span>
+                    <span>17</span>
+                  </div>
+                </div>
+                <div class="card-single">
+                  <div>
+                    <span class="day">Su</span>
+                    <span>18</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-options">
+              <a href="dashboard-allschedule.html" class="allschedule">All schedule</a>
+              <a href="dashboard-foryou.html" class="foryou">For you</a>
+            </div>
+            <div class="schedule">
+              <p class="time"><span>8:00</span></p>
+              <div class="events">
+                <div class="eventflex">
+                  <div class="event finance">
+                    <h5 class="eventname">Introduction to Banking Finance</h5>
+                    <img src="/assets/icon_list.png" alt="" class="eventmenu" />
+                    <p class="duration">100 minutes</p>
+                  </div>
+                  <div class="event math">
+                    <h5 class="eventname">Trigonometry</h5>
+                    <img src="/assets/icon_list.png" alt="" class="eventmenu" />
+                    <p class="duration">50 minutes</p>
+                  </div>
+                </div>
+              </div>
+              <div class="time"><span>11:00</span></div>
+              <div class="events">
+                <div class="eventflex">
+                  <div class="event history">
+                    <h5 class="eventname">History of Europe</h5>
+                    <img src="/assets/icon_list.png" alt="" class="eventmenu" />
+                    <p class="duration">100 minutes</p>
+                  </div>
+                </div>
+              </div>
+              <div class="time"><span>13:00</span></div>
+              <div class="events">
+                <div class="eventflex">
+                  <div class="event software">
+                    <h5 class="eventname">Fundamental of Fornt End Dev</h5>
+                    <img src="/assets/icon_list.png" alt="" class="eventmenu" />
+                    <p class="duration">50 minutes</p>
+                  </div>
+
+                  <div class="event science">
+                    <h5 class="eventname">Molecular Biology</h5>
+                    <img src="/assets/icon_list.png" alt="" class="eventmenu" />
+                    <p class="duration">50 minutes</p>
+                  </div>
+                </div>
+                <div class="finish"><span>finish</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-content">
+      <div class="card-chats">
+        <div class="chat-header">
+          <h4 class="messages">
+            Messages<img src="/assets/icon_plus.png" class="icon-plus" />
+          </h4>
+        </div>
+        <input
+          type="text"
+          name="searchbox"
+          class="search_box"
+          placeholder="Search"
+        />
+        <div class="chat-body">
+          <div class="chats">
+            <img src="assets/icon_profile1.png" alt="icon_profile1">
+            <div class="chat">
+                <h6 class="name">Nissa Sabyan</h6>
+                <p class="lastmessage">How about number 3?</p>
+            </div>
+            <p class="messagetime">10.15 pm</p>
+        </div>
+        <div class="chats">
+            <img src="assets/icon_profile2.png" alt="icon_profile2">
+            <div class="chat">
+                <h6 class="name">Rio Dewanto</h6>
+                <p class="lastmessage">I’m hungry.</p>
+            </div>
+            <p class="messagetime">9.12 pm</p>
+        </div>
+        <div class="chats">
+            <img src="assets/icon_profile3.png" alt="icon_profile3">
+            <div class="chat">
+                <h6 class="name">Discussion Group 21 (5)</h6>
+                <p class="lastmessage">Nissa : Let’s finish the task for tomorrow</p>
+            </div>
+            <p class="messagetime">1.23 pm</p>
+        </div>
+        <div class="chats">
+            <img src="assets/icon_profile4.png" alt="icon_profile4">
+            <div class="chat">
+                <h6 class="name">Isyana Sarasvati</h6>
+                <p class="lastmessage">Thanks.</p>
+            </div>
+            <p class="messagetime">Yesterday</p>
+        </div>
+        <div class="chats">
+            <img src="assets/icon_profile5.png" alt="icon_profile5">
+            <div class="chat">
+                <h6 class="name">Tompi</h6>
+                <p class="lastmessage">See you later!.</p>
+            </div>
+            <p class="messagetime">Yesterday</p>
+        </div>
+        <div class="chats">
+            <img src="assets/icon_profile6.png" alt="icon_profile6">
+            <div class="chat">
+                <h6 class="name">You, Tompi, Isyana Sarasvati, Peppy</h6>
+                <p class="lastmessage">Haha. Yes, I heard it before that you and rossa</p>
+            </div>
+            <p class="messagetime">8/10</p>
+        </div>
+        <div class="chats">
+            <img src="assets/icon_profile7.png" alt="icon_profile7">
+            <div class="chat">
+                <h6 class="name">Peppy</h6>
+                <p class="lastmessage">Haha. Me too</p>
+            </div>
+            <p class="messagetime">7/10</p>
+        </div>
+        <div class="chats">
+            <img src="assets/icon_profile8.png" alt="icon_profile8">
+            <div class="chat">
+                <h6 class="name">Sandra Dewi</h6>
+                <p class="lastmessage">How about number 3?</p>
+            </div>
+            <p class="messagetime">1/10</p>
+        </div>
+        <div class="chats">
+            <img src="assets/icon_profile9.png" alt="icon_profile9">
+            <div class="chat">
+                <h6 class="name">Reza Rahadian</h6>
+                <p class="lastmessage">I’m hungry.</p>
+            </div>
+            <p class="messagetime">1/10</p>
+        </div>
+        <div class="chats">
+            <img src="assets/icon_profile10.png" alt="icon_profile10">
+            <div class="chat">
+                <h6 class="name">Discussion Group 23 (5)</h6>
+                <p class="lastmessage">Nissa : Let’s finish the task for tomorrow</p>
+            </div>
+            <p class="messagetime">22/9</p>
+        </div>
+        <div class="chats">
+            <img src="assets/icon_profile11.png" alt="icon_profile11">
+            <div class="chat">
+                <h6 class="name">Raisa</h6>
+                <p class="lastmessage">Thanks.</p>
+            </div>
+            <p class="messagetime">21/9</p>
+        </div>
+        <div class="chats">
+            <img src="assets/icon_profile12.png" alt="icon_profile12">
+            <div class="chat">
+                <h6 class="name">dr. Adrian</h6>
+                <p class="lastmessage">See you later!</p>
+            </div>
+            <p class="messagetime">21/9</p>
+        </div>
+        <div class="chats">
+            <img src="assets/icon_profile13.png" alt="icon_profile13">
+            <div class="chat">
+                <h6 class="name">Uus</h6>
+                <p class="lastmessage">Haha. Me too</p>
+            </div>
+            <p class="messagetime">11/8</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
