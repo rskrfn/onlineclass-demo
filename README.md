@@ -29,20 +29,20 @@ Here are some screenshot of this project
 
 ## Login Page
 
-<image width="600" src="assets/ss1.png" />
+<image width="600" src="/assets/ss1.png" />
 
 ## Reset Password Page
 
-<image width="600" src="assets/ss2.png" />
+<image width="600" src="/assets/ss2.png" />
 
 ## Dashboard Page
 
-<image width="600" src="assets/ss3.png" />
+<image width="600" src="/assets/ss3.png" />
 
 ## Activity Page
 
-<image width="600" src="assets/ss4.png" />
+<image width="600" src="/assets/ss4.png" />
 
 ## Profile Page
 
-<image width="600" src="assets/ss5.png" />
+<image width="600" src="/assets/ss5.png" />
