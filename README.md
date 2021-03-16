@@ -29,7 +29,7 @@ Here are some screenshot of this project
 
 ## Login Page
 
-<image width="600" src="/assets/ss1.png" />
+<image width="600" src="/assets/ss1.PNG" />
 
 ## Reset Password Page
 
