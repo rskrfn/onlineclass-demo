@@ -33,16 +33,16 @@ Here are some screenshot of this project
 
 ## Reset Password Page
 
-<image width="600" src="/assets/ss2.png" />
+<image width="600" src="/assets/ss2.PNG" />
 
 ## Dashboard Page
 
-<image width="600" src="/assets/ss3.png" />
+<image width="600" src="/assets/ss3.PNG" />
 
 ## Activity Page
 
-<image width="600" src="/assets/ss4.png" />
+<image width="600" src="/assets/ss4.PNG" />
 
 ## Profile Page
 
-<image width="600" src="/assets/ss5.png" />
+<image width="600" src="/assets/ss5.PNG" />
