@@ -254,6 +254,7 @@ header {
 }
 .newclass-data {
   font-size: small;
+  font-weight: 500;
   align-items: center;
   background-color: white;
   border-radius: 10px;

@@ -187,7 +187,8 @@ body {
 }
 
 .myclass-data {
-  font-size: 0.875rem;
+  font-size: small;
+  font-weight: 500;
   align-items: center;
   background-color: white;
   border-radius: 0.3125rem;
