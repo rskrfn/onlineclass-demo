@@ -16,7 +16,7 @@ Slicing online class web project arkademy
 - [`CSS`](https://www.w3schools.com/css/)
 - [`Bootstrap`](https://getbootstrap.com/)
 
-## Instalation
+## Installation
 
 1. Open your terminal.
 2. Type `git clone https://github.com/rskrfn/onlineclass-demo.git`
