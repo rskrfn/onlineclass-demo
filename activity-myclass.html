@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!--Line Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/activity-myclass.css" />
+    <link rel="stylesheet" href="css/activity.css" />
+    <title>Activity</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="notif hide">
+        <img src="/assets/icon_notif.png" class="icon_notif" alt="" />
+      </div>
+      <div class="profile">
+        <a href="profile.html"
+          ><img
+            src="/assets/img_profile.png"
+            class="img_profile minalignprof"
+            alt=""
+        /></a>
+      </div>
+      <h6 class="name hide">Emir Kharisma</h6>
+      <p class="onlinestats hide">online</p>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="dashboard-allschedule.html" class="inactive"
+              ><span class="btn_sidemenu minalign">
+                <img
+                  src="/assets/icon_dashboardw.png"
+                  class="icon_sidemenu"
+                /><span class="hide">Dashboard</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="activity.html" class="active"
+              ><span class="btn_sidemenu minalign"
+                ><img
+                  src="/assets/icon_activityb.png"
+                  class="icon_sidemenu"
+                /><span class="hide">Activity</span></span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="setting.html" class="belowactive"
+              ><span class="btn_sidemenu minalign"
+                ><img
+                  src="/assets/icon_setting.png"
+                  class="icon_sidemenu"
+                /><span class="hide">Settings</span></span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="help.html"
+              ><span class="btn_sidemenu minalign"
+                ><img src="/assets/icon_help.png" class="icon_sidemenu" /><span
+                  class="hide"
+                  >Help</span
+                ></span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="index.html"
+              ><span class="btn_logout minalign"
+                ><img
+                  src="/assets/icon_logout.png"
+                  class="icon_sidemenu"
+                /><span class="hide">Logout</span></span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="container-fluid">
+        <div class="header">
+          <a href="activity.html" class="btnback"
+            ><i class="las la-angle-left"></i>
+            <span style="margin-left: 1rem">My Class</span></a
+          >
+        </div>
+        <div class="search-group searchbar">
+          <div class="row d-flex">
+            <form class="col-8" action="#">
+              <div class="form-group">
+                <label for="search"><i class="las la-1x la-search"></i></label>
+                <input
+                  type="text"
+                  class="form-control search"
+                  name="search "
+                  placeholder="Quick Search "
+                />
+              </div>
+            </form>
+            <div class="col">
+              <button type="submit" class="btn btn-search">Search</button>
+            </div>
+            <form class="col sort" action="#">
+              <div class="col form-group">
+                <label for="sort" class="sort">Sort by</label>
+                <select class="selectpicker select">
+                  <option>All Categories</option>
+                  <option>Software</option>
+                  <option>History</option>
+                  <option>Psychology</option>
+                  <option>Finance</option>
+                  <option>Math</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="my-class">
+        <div class="row myclass-header myclass-table">
+          <div class="col table-header nm">Class Name</div>
+          <div class="col table-header hide">Category</div>
+          <div class="col table-header hide">Description</div>
+          <div class="col table-header">Progress</div>
+          <div class="col status table-header hide">Status</div>
+          <div class="col table-header">Score</div>
+          <div class="col-1 table-header"></div>
+        </div>
+
+        <div class="row myclass-data myclass-table">
+          <div class="col">
+            <a href=""> Front-end fundamentals</a>
+          </div>
+          <div class="col hide">
+            <a href=""> Software</a>
+          </div>
+          <div class="col hide">Learn the fundamentals of front end...</div>
+          <div class="col">
+            <div class="progimg">
+              <span><img src="assets/img_prog1.png" alt="" /></span>
+            </div>
+          </div>
+          <div class="col status hide"><span>Ongoing</span></div>
+          <div class="col">
+            <span class="score1">86</span>
+          </div>
+          <div class="col-1">
+            <a href=""><img src="assets/icon_lista.png" alt="icon list" /></a>
+          </div>
+        </div>
+        <div class="row myclass-data myclass-table">
+          <div class="col">
+            <a href="">HTML for Beginners</a>
+          </div>
+          <div class="col hide">
+            <a href="">Software</a>
+          </div>
+          <div class="col hide">HTML from scratch</div>
+          <div class="col">
+            <div class="progimg">
+              <span><img src="assets/img_prog2.png" alt="" /></span>
+            </div>
+          </div>
+          <div class="col status hide"><span>Ongoing</span></div>
+          <div class="col">
+            <span class="score2">71</span>
+          </div>
+          <div class="col-1">
+            <a href=""><img src="assets/icon_lista.png" alt="icon list" /></a>
+          </div>
+        </div>
+        <div class="row myclass-data myclass-table">
+          <div class="col">
+            <a href="">History of Europe</a>
+          </div>
+          <div class="col hide">
+            <a href="">History</a>
+          </div>
+          <div class="col hide">The history of Europe concerns itself...</div>
+          <div class="col">
+            <div class="progimg">
+              <span><img src="assets/img_prog3.png" alt="" /></span>
+            </div>
+          </div>
+          <div class="col status hide"><span>Ongoing</span></div>
+          <div class="col col">
+            <span class="score3">62</span>
+          </div>
+          <div class="col-1">
+            <a href=""><img src="assets/icon_lista.png" alt="icon list" /></a>
+          </div>
+        </div>
+        <div class="row myclass-data myclass-table">
+          <div class="col">
+            <a href="">Trigonometry</a>
+          </div>
+          <div class="col hide">
+            <a href="">Math</a>
+          </div>
+          <div class="col hide">Trigonometry helps us find angles...</div>
+          <div class="col">
+            <div class="progimg">
+              <span><img src="assets/img_prog4.png" alt="" /></span>
+            </div>
+          </div>
+          <div class="col status hide"><span>Ongoing</span></div>
+          <div class="col col">
+            <span class="score4">95</span>
+          </div>
+          <div class="col-1">
+            <a href=""><img src="assets/icon_lista.png" alt="icon list" /></a>
+          </div>
+        </div>
+        <div class="row myclass-data myclass-table">
+          <div class="col">
+            <a href="">Algebra</a>
+          </div>
+          <div class="col hide">
+            <a href="">Math</a>
+          </div>
+          <div class="col hide">Branch of mathematics dealing with...</div>
+          <div class="col">
+            <div class="progimg">
+              <span><img src="assets/img_prog5.png" alt="" /></span>
+            </div>
+          </div>
+          <div class="col status hide"><span>Ongoing</span></div>
+          <div class="col col">
+            <span class="score5">100</span>
+          </div>
+          <div class="col-1">
+            <a href=""><img src="assets/icon_lista.png" alt="icon list" /></a>
+          </div>
+        </div>
+        <div class="row myclass-data myclass-table">
+          <div class="col">
+            <a href="">Molecular Biology</a>
+          </div>
+          <div class="col hide">
+            <a href="">Science</a>
+          </div>
+          <div class="col hide">Study the composition, structure...</div>
+          <div class="col">
+            <div class="progimg">
+              <span><img src="assets/img_prog6.png" alt="" /></span>
+            </div>
+          </div>
+          <div class="col status hide"><span>Ongoing</span></div>
+          <div class="col col">
+            <span class="score6">42</span>
+          </div>
+          <div class="col-1">
+            <a href=""><img src="assets/icon_lista.png" alt="icon list" /></a>
+          </div>
+        </div>
+        <div class="row myclass-data myclass-table">
+          <div class="col">
+            <a href="">Banking Finance</a>
+          </div>
+          <div class="col hide">
+            <a href="">Finance</a>
+          </div>
+          <div class="col hide">Explore the dynamic, fast-paced...</div>
+          <div class="col">
+            <div class="progimg">
+              <span><img src="assets/img_prog7.png" alt="" /></span>
+            </div>
+          </div>
+          <div class="col status hide"><span>Ongoing</span></div>
+          <div class="col">
+            <span class="score7">21</span>
+          </div>
+          <div class="col-1">
+            <a href=""><img src="assets/icon_lista.png" alt="icon list" /></a>
+          </div>
+        </div>
+        <div class="row myclass-data myclass-table">
+          <div class="col">
+            <a href="">Basic Excel</a>
+          </div>
+          <div class="col hide">
+            <a href="">Software</a>
+          </div>
+          <div class="col hide">Learn Excel from beginner to...</div>
+          <div class="col">
+            <div class="progimg">
+              <span><img src="assets/img_prog8.png" alt="" /></span>
+            </div>
+          </div>
+          <div class="col status hide"><span>Ongoing</span></div>
+          <div class="col">
+            <span class="score8">98</span>
+          </div>
+          <div class="col-1">
+            <a href=""><img src="assets/icon_lista.png" alt="icon list" /></a>
+          </div>
+        </div>
+        <div class="row myclass-data myclass-table">
+          <div class="col">
+            <a href="">Thermodynamics and Phase Equilibria</a>
+          </div>
+          <div class="col hide">
+            <a href="">Science</a>
+          </div>
+          <div class="col hide">Learn thermodynamics and and how...</div>
+          <div class="col">
+            <div class="progimg">
+              <span><img src="assets/img_prog9.png" alt="" /></span>
+            </div>
+          </div>
+          <div class="col status hide"><span>Ongoing</span></div>
+          <div class="col col">
+            <span class="score9">86</span>
+          </div>
+          <div class="col-1">
+            <a href=""><img src="assets/icon_lista.png" alt="icon list" /></a>
+          </div>
+        </div>
+        <div class="row myclass-data myclass-table">
+          <div class="col">
+            <a href="">Ancient Egypt and Its Civilization</a>
+          </div>
+          <div class="col hide">
+            <a href="">History</a>
+          </div>
+          <div class="col hide">Colossal pyramids, imposing temples...</div>
+          <div class="col">
+            <div class="progimg">
+              <span><img src="assets/img_prog10.png" alt="" /></span>
+            </div>
+          </div>
+          <div class="col status hide"><span>Ongoing</span></div>
+          <div class="col col">
+            <span class="score10">72</span>
+          </div>
+          <div class="col-1">
+            <a href=""><img src="assets/icon_lista.png" alt="icon list" /></a>
+          </div>
+        </div>
+
+        <div class="pagination pagecounter">
+          <div class="col align d-flex justify-content-start align-items-center">
+            Showing 10 out of 21
+          </div>
+          <div class="col d-flex justify-content-end align-items-center">
+            <span class="pages"><a href="#"><</a></span>
+            <span class="pages active-page"><a href="#">1</a></span>
+            <span class="pages"><a href="#">2</a></span>
+            <span class="pages hide"><a href="#">3</a></span>
+            <span class="pages"><a href=" ">></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
